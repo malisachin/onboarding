@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37cc8291-9b9d-4f0a-aec7-c5c043c98121" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/MAIN.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/NewOnBoardingApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/NewOnBoardingApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/config/SentryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/config/SentryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/config/SshTunnelConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/controller/UpdateDeviceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/controller/UpdateDeviceController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/iface/ProposedFlowIface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/iface/ProposedFlowIface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/DeviceUpdateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/DeviceUpdateImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/EdmsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/EdmsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/ProposedFlowImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/ProposedFlowImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/SubscriberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/SubscriberServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ug/daes/onboarding/service/impl/TestStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages/api_error_messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages/api_error_messages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/messages/api_response_messages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/messages/api_response_messages.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

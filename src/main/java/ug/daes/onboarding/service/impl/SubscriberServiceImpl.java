@@ -154,6 +154,7 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
 	@Autowired
 	ConsentHistoryRepo consentHistoryRepo;
 
+
 	ObjectMapper objectMapper = new ObjectMapper();
 
 	@Value(value = "${email.url}")
@@ -238,6 +239,9 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
 
 	@Autowired
 	SentryClientExceptions sentryClientExceptions;
+
+	@Autowired
+	OnBoardingServiceException onBoardingServiceException;
 
 
 	public String generateSubscriberUniqueId() {
@@ -1242,7 +1246,7 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
 			}
 		}catch (Exception e){
 			e.printStackTrace();
-			return OnBoardingServiceException.handleExceptionWithStaticMessageWithSentry(e,obRequestDTO.getSuID());
+			return onBoardingServiceException.handleExceptionWithStaticMessageWithSentry(e,obRequestDTO.getSuID());
 		}
 
 		subscriberObData = obRequestDTO.getSubscriberData();
@@ -1297,7 +1301,7 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
 			}
 		} catch (Exception e){
 			e.printStackTrace();
-			return OnBoardingServiceException.handleExceptionWithStaticMessageWithSentry(e,obRequestDTO.getSuID());
+			return onBoardingServiceException.handleExceptionWithStaticMessageWithSentry(e,obRequestDTO.getSuID());
 		}
 		subscriber.setFullName(subscriberObData.getSecondaryIdentifier() + " " + subscriberObData.getPrimaryIdentifier());
 		subscriber.setDateOfBirth(subscriberObData.getDateOfBirth());
@@ -1460,7 +1464,7 @@ public class SubscriberServiceImpl implements SubscriberServiceIface {
 			}
 		}catch (Exception e){
 			e.printStackTrace();
-			return OnBoardingServiceException.handleExceptionWithStaticMessageWithSentry(e,obRequestDTO.getSuID());
+			return onBoardingServiceException.handleExceptionWithStaticMessageWithSentry(e,obRequestDTO.getSuID());
 		}
 	}
 

@@ -9,14 +9,13 @@ import javax.mail.SendFailedException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.*;
 
 import ug.daes.onboarding.constant.ApiResponse;
 import ug.daes.onboarding.dto.MobileOTPDto;
 import ug.daes.onboarding.service.iface.OtpServiceIface;
+import ug.daes.onboarding.util.AppUtil;
 
 @RestController
 @CrossOrigin
@@ -30,6 +29,9 @@ public class OTPController {
 	
 	@Autowired
 	OtpServiceIface otpServiceIface;
+
+	@Value(value = "${service.version}")
+	private String version;
 	
 	@PostMapping("/api/post/register-subscriber")
 	public ApiResponse sendOtpMobile(@RequestBody MobileOTPDto otpDto)
@@ -39,5 +41,11 @@ public class OTPController {
 		return otpServiceIface.sendOTPMobileSms(otpDto);
 	}
 
+
+	@GetMapping("/api/get/onboarding/version")
+	public ApiResponse getProjectVersion(){
+		String msg = "OnBoarding service version: " + version;
+		return AppUtil.createApiResponse(true,msg,null);
+	}
 	
 }

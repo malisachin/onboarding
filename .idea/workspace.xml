@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37cc8291-9b9d-4f0a-aec7-c5c043c98121" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dts.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dts.properties" afterDir="false" />
-    </list>
+    <list default="true" id="37cc8291-9b9d-4f0a-aec7-c5c043c98121" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
